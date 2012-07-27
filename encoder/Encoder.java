@@ -39,31 +39,11 @@ public class Encoder
         while(in.hasNextLine()){
             String line = in.nextLine();
 
-            //String toReturn = myReplace(line);
             String result = "";
             String saver = "";
-            //for ( int index = 0 ; index < line.length() ; ++index ){ 
-            //if(line.charAt(index) == (' ')){
-            //    result += 'K';
-            // }
-            // if(line.charAt(index) == 'i'){
-            //   result += '!';
-            // }
-            // if(line.charAt(index) != ' ' && line.charAt(index) != 'i'){
-            //   result += line.substring(index,index+1);
-            //}
-
-            //else{
-            //result += alphabet[x]; //index - alphabet.length
-            //x++;
-            //if(x >= alphabet.length){
-            //    x=0; // initialize x to zero
-            //}
 
             saver += line; // saves the chars at that place.
-            //}
 
-            //}
             result += replacer(line);
             out.println(result);
             charOut.println(saver);
