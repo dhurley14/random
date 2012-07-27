@@ -4,11 +4,10 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 /**
  * Takes in a text file and encodes it using
- * a random character between every character
- * in the text file.
+ * a caesar cipher.
  * 
  * @author Devin Hurley
- * @version July 23rd, 2012
+ * @version July 27th, 2012
  */
 public class Encoder
 {
@@ -17,11 +16,12 @@ public class Encoder
     private static int inputConstant = 0;
     public static void main(String[] args) throws FileNotFoundException{
         Scanner console = new Scanner(System.in);
-        String inputFileName = "mytext.txt";
-        String outputFileName = "sendto";
-        System.out.print("Input file: " + inputFileName);
+
+        System.out.print("Input file: " );
+        String inputFileName = console.next();
         System.out.println();
-        System.out.print("Output file: " + outputFileName);
+        System.out.print("Output file: " );
+        String outputFileName = console.next();
         System.out.println();
         System.out.println("Enter a number to shift by >>> ");
         inputConstant = console.nextInt();
@@ -31,10 +31,10 @@ public class Encoder
         File inputFile = new File(inputFileName);
         Scanner in = new Scanner(inputFile);
         PrintWriter out = new PrintWriter(outputFileName);
-        PrintWriter charOut = new PrintWriter("yar");
+        //PrintWriter charOut = new PrintWriter("yar");
 
         out.print(""); // clear "out"
-        charOut.print(""); // clear "charOut"
+        //charOut.print(""); // clear "charOut"
 
         while(in.hasNextLine()){
             String line = in.nextLine();
@@ -46,12 +46,12 @@ public class Encoder
 
             result += replacer(line);
             out.println(result);
-            charOut.println(saver);
+            //charOut.println(saver);
             System.out.println(saver);
         }
         in.close();
         out.close();
-        charOut.close();
+        //charOut.close();
     }
 
     //method to sort through and find out where in our alphabet the character at that spot lies
@@ -64,11 +64,7 @@ public class Encoder
         char returnedChar = ' ';
         for(int i =0; i<str.length(); i++){
             myChar = str.charAt(i);
-            System.out.println("This is the char we are" + 
-                " working with " + myChar);
             returnedChar = thisCharWithThat(myChar);
-            System.out.println("Now it is this " + returnedChar);
-            System.out.println();
             temp += returnedChar;
         }
         return temp;
