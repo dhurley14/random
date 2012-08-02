@@ -1,2 +1,4 @@
 This is going to be encoded!!
 This will also be encoded.
+CAPITALIZED
+some more words.
