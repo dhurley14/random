@@ -1,15 +1,16 @@
-
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 
 /**
- * Class EncoderApplet - write a description of the class here
+ * Class TheApp - encodes a message
+ * using a caesar cipher, with a 
+ * customizable shift.
  * 
- * @author (your name) 
- * @version (a version number)
+ * @author Devin Hurley
+ * @version August 2nd, 2012
  */
-public class EncoderApplet extends JApplet implements ActionListener
+public class TheApp extends JApplet
 {
     // instance variables - replace the example below with your own
     private int x;
@@ -19,13 +20,6 @@ public class EncoderApplet extends JApplet implements ActionListener
     private TextField output;
 
     private int newLine = 0;
-    public static void main(String args[]){
-        new EncoderApplet();
-    }
-
-    public EncoderApplet(){
-        init();
-    }
 
     /**
      * Called by the browser or applet viewer to inform this JApplet that it
@@ -42,52 +36,23 @@ public class EncoderApplet extends JApplet implements ActionListener
         rootPane.putClientProperty("defeatSystemEventQueueCheck", Boolean.TRUE);
         // provide any initialisation necessary for your JApplet\
         setBackground(Color.lightGray);
-        //add(this.input = new TextArea(3, 10));
-        //add(new TextArea("Some\nInitial\nText", 3, 10));
-        //theString = JOptionPane.showInputDialog(null,"Enter something...");
-        //JOptionPane.showMessageDialog(null,"Hello","title", JOptionPane.PLAIN_MESSAGE);
-        //add(new Button("click"),CENTER_ALIGNMENT);
+        
         setLayout(null);
-        button = new Button("Click for Cipher!");
-        input = new TextField("INPUT", 100);
-        button.setBounds(20,20,200,40);
-
-        input.setBounds(20,70,100,40);
-        rot13 = new TextField("number to rotate",100);
-        rot13.setBounds(20,200,100,80);
-        output = new TextField("OUTPUT GOES HERE", 100);
-        output.setBounds(20, 300, 100,40);
-
-        add(button);
-
-        add(input);
-        add(rot13);
-        add(output);
-        button.addActionListener(this);
-        output.addActionListener(this);
-        /*class event extends MouseAdapter{
-        public void mouseClicked(MouseEvent e){
-        if(SwingUtilities.isLeftMouseButton(e)){
-        output.setText("clicked!");
-        }
-        repaint();
-        e.consume();
-        }
-
-        }
-        addMouseListener(new event());
-         */
-    }
-
-    public void actionPerformed(ActionEvent e){
-        String action = e.getActionCommand();
-        if(action.equals("Click for Cipher!")){
-            output.setText("yar");
-            TextField out = new TextField(input.getText(), 100);
-            out.setBounds(150,200,200,50);
-            add(out);
-        }
-        //repaint();
+        MiniCoder mc = new MiniCoder();
+        int con = Integer.parseInt(JOptionPane.showInputDialog(null, "enter a rotation number"));
+        mc.inputConstant = con;
+        String stringIn = JOptionPane.showInputDialog(null,"Enter Message to be decoded!" + 
+                " \nTakes case into effect.");
+        String replaced = mc.replacer(stringIn);
+        JOptionPane.showMessageDialog(null, 
+            replaced,"Scrambled message\n", JOptionPane.PLAIN_MESSAGE);
+        TextField tf = new TextField(replaced);
+        tf.setBounds(20,35,200,200);
+        add(tf);
+        
+        // eventually add code to give user option to decode as well as encode
+            
+            
     }
 
     /**
@@ -120,18 +85,9 @@ public class EncoderApplet extends JApplet implements ActionListener
      */
     public void paint(Graphics g)
     {
-        // simple text displayed on applet
-        //g.setColor(Color.white);
-        //g.fillRect(0, 0, 200, 100);
-        //g.setColor(Color.black);
-        //g.drawString("Sample Applet", 20, 20);
-        //g.setColor(Color.blue);
-        //g.drawString("created by BlueJ", 20, 40);
-        //g.drawString(theString, 20, 30);
-        
-        g.setColor(Color.blue);
-        g.drawString("Output will appear below",140,190);
-        
+        g.setColor(Color.black);
+        g.drawString("Copyable Caesar Cipher!",20,20);
+
     }
 
     /**

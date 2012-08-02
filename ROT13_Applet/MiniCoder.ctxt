@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=str
+comment0.target=java.lang.String\ replacer(java.lang.String)
+comment1.params=c
+comment1.target=char\ thisCharWithThat(char)
+comment2.params=ch
+comment2.target=char\ thisUCharWithThat(char)
+numComments=3
