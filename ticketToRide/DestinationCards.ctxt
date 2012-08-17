@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=DestinationCards()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ DestinationCards\r\n
+comment1.params=n
+comment1.target=java.lang.String\ getDCard(int)
+comment1.text=\r\n\ Accessor\ method\ to\ get\ the\ destination\ cards\ dealt\r\n\ \r\n\ @param\ int\ n\r\n\ @return\ String\ destination\ card\ at\ that\ position\r\n
+comment2.params=
+comment2.target=void\ removeDCard()
+comment2.text=\r\n\ Mutator\ method\ to\ remove\ a\ destination\ card\ \r\n\ from\ the\ deck\ (arraylist)\ of\r\n\ destination\ cards\r\n\ \r\n\ @param\r\n\ @return\ void\r\n
+comment3.params=g
+comment3.target=void\ paintComponent(java.awt.Graphics)
+comment3.text=\r\n\ Paint\ method\ for\ class\ DestinationCards\r\n\ \r\n\ @param\ Graphics\r\n\ \ \ \ \ \ \ \ \ \ \ \ g\r\n\ @return\ void\r\n
+numComments=4

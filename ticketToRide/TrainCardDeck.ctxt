@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=TrainCardDeck()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ TrainCardDeck\r\n
+comment1.params=
+comment1.target=TrainCard\ draw()
+comment1.text=\r\n\ Takes\ a\ TrainCard\ from\ the\ top\ of\ the\ deck\ \r\n\ to\ add\ to\ the\ players\r\n\ hand\ and\ then\ removes\ it\ from\ the\ deck.\r\n\ \r\n\ @param\r\n\ @return\ TrainCard\r\n
+comment2.params=card
+comment2.target=void\ discard(TrainCard)
+comment2.text=\r\n\ Adds\ the\ train\ card\ to\ the\ dicardDeck\ to\ be\ reshuffled\ \r\n\ when\ trainCards\ deck\ is\ empty.\r\n\ \r\n\ @param\ TrainCard\ card\r\n\ @return\ void\r\n
+comment3.params=
+comment3.target=void\ reshuffle()
+comment3.text=\r\n\ When\ the\ discardDeck\ contains\ 40\ or\ more\ cards,\r\n\ cards\ in\ discardDeck\ are\ added\ back\ to\ \r\n\ trainCard\ deck\ and\ shuffled.\r\n\ \r\n\ @param\r\n\ @return\ void\r\n
+comment4.params=g
+comment4.target=void\ paintComponent(java.awt.Graphics)
+comment4.text=\r\n\ Draws\ deckCards\ image.\r\n\ \r\n\ @param\ Graphics\ g\r\n\ @return\ void\r\n
+numComments=5

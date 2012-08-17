@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Globetrotter()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ \r\n\ Globetrotter\r\n
+comment1.params=g
+comment1.target=void\ paintComponent(java.awt.Graphics)
+comment1.text=\r\n\ paint\ method\ for\ Globetrotter\ class\r\n\ \r\n\ @param\ Graphics\r\n\ \ \ \ \ \ \ \ \ \ \ \ g\r\n\ @return\ void\r\n
+numComments=2

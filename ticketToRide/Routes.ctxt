@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ Routes()
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ this\ method\ checks\ if\ the\ city\ passed\ \r\n\ in\ is\ contained\ in\ the\ route\ that\r\n\ the\ player\ is\ given.\r\n\ \r\n\ @param\ Rectangle\r\n\ @return\ true\ if\ the\ city\ passed\ in\ is\ contained\ in\ the\ route\r\n
+comment2.params=city
+comment2.target=void\ edgeChecker(java.lang.String)
+comment2.text=\r\n\ Method\ to\ see\ if\ the\ city\ we\ \r\n\ click\ on\ is\ in\ the\ arrayList\ of\ possible\r\n\ routes\ we\ can\ take\ from\r\n\ \r\n\ @param\ String\r\n\ \ \ \ \ \ \ \ \ \ \ \ city\r\n\ @return\ void\r\n\ \r\n\ \r\n
+comment3.params=city
+comment3.target=void\ tempChecker(java.lang.String)
+comment3.text=\r\n\ Method\ to\ see\ if\ the\ city\ has\ more\ than\ one\ route\r\n\ \r\n\ \r\n\ @param\ String\r\n\ \ \ \ \ \ \ \ \ \ \ \ city\r\n\ @return\ void\r\n
+comment4.params=color
+comment4.target=void\ removePossibleRouteWithColor(java.lang.String)
+comment4.text=\r\n\ Method\ to\ delete\ a\ route\ from\ \r\n\ possible\ routes\ using\ that\ colored\ path\r\n\ \r\n\ @param\ String\r\n\ \ \ \ \ \ \ \ \ \ \ \ color\r\n\ @return\ void\r\n
+comment5.params=
+comment5.target=void\ routeChecker()
+comment5.text=\r\n\ checks\ any\ possible\ route\ feed\ in\ a\ file\ from\ blackboard\r\n\ \r\n
+numComments=6

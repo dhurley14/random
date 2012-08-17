@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=TrainCardImages()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ TrainCards\r\n\ \r\n
+comment1.params=color
+comment1.target=java.awt.image.BufferedImage\ getImage(java.lang.String)
+comment1.text=\r\n\ Gets\ the\ image\ from\ images\ arrayList.\r\n\ \r\n\ @param\ String\ color\r\n\ @return\ BufferedImage\r\n
+numComments=2

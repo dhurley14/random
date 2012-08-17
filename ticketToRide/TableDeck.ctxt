@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=TableDeck()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ TableDeck\r\n
+comment1.params=card\ i
+comment1.target=void\ addToDeck(TrainCard,\ int)
+comment1.text=\r\n\ Adds\ a\ trainCard\ to\ tableDeck\r\n\ \r\n\ @param\ TrainCard\ card,\ int\ i\r\n\ @return\ void\r\n
+comment2.params=n
+comment2.target=TrainCard\ getCard(int)
+comment2.text=\r\n\ Returns\ the\ TrainCard\ at\ position\ clicked.\r\n\ \r\n\ @param\ int\ n\r\n\ @return\ TrainCard\r\n
+comment3.params=card
+comment3.target=void\ discard(TrainCard)
+comment3.text=\r\n\ Removes\ TrainCard\ from\ tcDeck.\r\n\ \r\n\ @param\ trainCard\ card\r\n\ @return\ void\r\n
+comment4.params=n
+comment4.target=void\ remove(int)
+comment4.text=\r\n\ Removes\ TrainCard\ from\ tableDeck(cards\ flipped\ over\ on\ board)\r\n\ \r\n\ @param\ int\ n\r\n\ @return\ void\r\n
+comment5.params=g
+comment5.target=void\ paintComponent(java.awt.Graphics)
+comment5.text=\r\n\ Clears\ the\ last\ TrainCards\ from\ tableDeck\ and\ repaints\r\n\ the\ new\ tableDeck.\r\n\ \r\n\ @param\ Graphics\ g\r\n\ @return\ void\r\n
+numComments=6

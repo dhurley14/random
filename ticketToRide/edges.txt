@@ -1,0 +1,81 @@
+Murmansk Lieksa Gray 9
+Kirkenes Murmansk White 3 Ferry 1
+Kirkenes Honningsvag Green 2 Ferry 1
+Honningsvag Tromso Purple 4 Ferry 2
+Tromso Narvik Yellow 3 Ferry 1
+Narvik Kiruna White 1 Tunnel
+Narvik Kiruna Purple 1 Tunnel
+Narvik Moirana Orange 4 Ferry 2
+Kiruna Boden Black 3
+Kiruna Boden Orange 3
+Kirkenes Rovaniemi Blue 5
+Rovaniemi Tornio Red 1
+Boden Tornio Green 1
+Rovaniemi Oulu Orange 2
+Tornio Oulu White 1
+Oulu Kajaani Yellow 2
+Kajaani Lieksa Blue 1
+Lieksa Kuopio Black 1
+Kajaani Kuopio Green 2
+Oulu Kuopio Gray 3
+Oulu Vaasa Black 3
+Vaasa Umea Gray 1 Ferry 1
+Vaasa Sundsvall Blue 3 Ferry 1
+Vaasa Kuopio Gray 4
+Vaasa Tampere Purple 2
+Kuopio Imatra Purple 2
+Kuopio Lahti White 3
+Moirana Trondheim Green 5 Tunnel
+Moirana Trondheim Red 6 Ferry 2
+Trondheim Ostersund Black 2 Tunnel
+Trondheim Lillehammer Orange 3 Tunnel
+Trondheim Andalsnes White 2 Ferry 1
+Lillehammer Andalsnes Yellow 2 Tunnel
+Bergen Andalsnes Black 5 Ferry 2
+Bergen Stavanger Purple 2 Ferry 1
+Bergen Oslo Blue 4 Tunnel
+Bergen Oslo Red 4 Tunnel
+Lahti Imatra Yellow 2
+Lahti Helsinki Black 1
+Lahti Tampere Blue 1
+Helsinki Tampere Orange 1
+Helsinki Turku White 1
+Helsinki Imatra Red 3
+Helsinki Tallinn Purple 2
+Helsinki Stockholm Yellow 4 Ferry 1
+Helsinki Stockholm Gray 4 Ferry 2
+Tampere Turku Red 1
+Tallinn Stockholm Green 4 Ferry 2
+Boden Umea Red 3
+Boden Umea White 3
+Umea Sundsvall Yellow 3
+Umea Sundsvall Purple 3
+Sundsvall Stockholm Gray 4 Left
+Sundsvall Stockholm Gray 4 Right
+Sundsvall Ostersund Green 2
+Sundsvall Orebro Orange 4
+Stockholm Norrkoping Red 1
+Stockholm Norrkoping Orange 1
+Stockholm Orebro Purple 2
+Stockholm Orebro Black 2
+Stockholm Turku Blue 3 Ferry 1
+Oslo Orebro Yellow 2
+Oslo Orebro Green 2
+Orebro Norrkoping Gray 2
+Orebro Goteborg Blue 2
+Oslo Goteborg Orange 2
+Oslo Alborg White 3 Ferry 1
+Norrkoping Goteborg Gray 3
+Norrkoping Karlskrona Yellow 3
+Norrkoping Karlskrona White 3
+Karlskrona Kobenhavn Green 2 Ferry 1
+Karlskrona Kobenhavn Blue 2 Ferry 1
+Arhus Kobenhavn Gray 1 Ferry 1
+Arhus Alborg Purple 1
+Goteborg Kobenhavn Black 2 Ferry 1
+Goteborg Alborg Gray 2 Ferry 1
+Kristiansand Alborg Red 2 Ferry 1
+Kristiansand Stavanger Green 2 Tunnel
+Kristiansand Stavanger Orange 3 Ferry 1
+Kristiansand Oslo Black 2
+Oslo Lillehammer Purple 2 Tunnel
