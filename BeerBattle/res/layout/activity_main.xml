@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluebg2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+<!--android:background="#4AACC6"-->
+    <TextView
+        android:id="@+id/the_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/hello_world"
+        android:textSize="28sp" />
+    <TextView
+        android:id="@+id/the_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/the_title"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/hello_world2"
+        android:textColor="@color/Black"
+        android:textSize="28sp"/>
+
+    <EditText
+        android:id="@+id/beerEnter1"
+        android:layout_marginTop="10sp"
+        android:layout_width="fill_parent"
+        android:layout_height="28sp"
+        android:layout_below="@+id/the_title"
+        android:background="@color/White"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:ems="28"
+        android:fontFamily="sans-serif-light"
+        android:hint="PBR, Blue Moon, Coors ..."
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/beerEnter2"
+        android:layout_marginTop="10sp"
+        android:layout_width="fill_parent"
+        android:layout_height="28sp"
+        android:layout_below="@+id/beerEnter1"
+        android:background="@color/White"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:ems="28"
+        android:fontFamily="sans-serif-light"
+        android:hint="PBR, Blue Moon, Coors ..."
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/getRatings"
+        android:layout_width="250sp"
+        android:layout_height="50sp"
+        android:layout_below="@+id/beerEnter2"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:background="@drawable/bluebutton3"
+        android:text="@string/getRatingsText"
+        android:layout_marginTop="10sp"
+        android:textColor="@color/White" />
+
+    <TextView
+        android:id="@+id/firstBeerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getRatings"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-light"
+        android:text=""
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/firstBA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstBeerName"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-light"
+        android:text="BA: "
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/BARating1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstBeerName"
+        android:layout_toRightOf="@+id/firstBA"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-light"
+        android:text=" "
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/firstRB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstBeerName"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-light"
+        android:text="  RB: "
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/RBRating1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstBeerName"
+        android:layout_toRightOf="@+id/firstRB"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-light"
+        android:text=" "
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/AVG1TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstBeerName"
+        android:layout_toLeftOf="@+id/AVG1"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-light"
+        android:text=" AVG: "
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/AVG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstBeerName"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-light"
+        android:text="  "
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/secondBeerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AVG1TEXT"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-light"
+        android:text=" "
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/secondBA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondBeerName"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-light"
+        android:text="BA: "
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/BARating2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondBeerName"
+        android:layout_toRightOf="@+id/secondBA"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-light"
+        android:text="  "
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/secondRB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondBeerName"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-light"
+        android:text=" RB: "
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/RBRating2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondBeerName"
+        android:layout_toRightOf="@+id/secondRB"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-light"
+        android:text="  "
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/AVG2TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondBeerName"
+        android:layout_toLeftOf="@+id/AVG2"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-light"
+        android:text=" AVG: "
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/AVG2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondBeerName"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:fontFamily="sans-serif-light"
+        android:text="  "
+        android:textSize="18sp" />
+    
+
+</RelativeLayout>

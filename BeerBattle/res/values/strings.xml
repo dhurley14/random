@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BeerBattle</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Beer</string>
+    <string name="hello_world2">Battle</string>
+    <string name="CompareBeers">Compare Beers</string>
+    <string name="ratingsHolderText">Ratings: </string>
+    <string name="getRatingsText">Compare Beers</string>
+    <color name="Black">#000000</color>
+    <color name="White">#FFFFFF</color>
+
+</resources>
